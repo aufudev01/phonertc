@@ -223,11 +223,13 @@ class PhoneRTCPlugin : CDVPlugin {
 
     func initLocalVideoTrack() {
         var cameraID: String?
-        var position: AVCaptureDevicePosition = AVCaptureDevicePosition.Front
+        let position: AVCaptureDevicePosition = AVCaptureDevicePosition.Front
 
+        /*
         if (self.videoConfig?.rearFacingCamera == true) {
             position = AVCaptureDevicePosition.Back
         }
+        */
 
         for captureDevice in AVCaptureDevice.devicesWithMediaType(AVMediaTypeVideo) {
 
@@ -283,7 +285,7 @@ class PhoneRTCPlugin : CDVPlugin {
     func refreshVideoContainer() {
         var n = self.remoteVideoViews.count
 
-        if ( n == 0 || self.videoConfig!.isSafetyCam) {
+        if ( n == 0 ) {
 
             if self.localVideoView != nil {
                 self.localVideoView!.frame = CGRectMake(
@@ -380,13 +382,15 @@ class PhoneRTCPlugin : CDVPlugin {
     func onSessionConnected() {
         print("Calling onSessionConnected")
 
+        /*
         if (self.videoConfig?.isAudioCall != false) {
             return
         }
+        */
 
         let params = self.videoConfig!.local!
 
-        if ( self.localVideoView != nil && self.videoConfig!.isSafetyCam == false ) {
+        if ( self.localVideoView != nil ) {
 
             print("resizing")
             self.localVideoView?.layer.borderColor = UIColor.whiteColor().CGColor
