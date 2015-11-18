@@ -5,9 +5,8 @@
     version="2.0.1">
 
 	<name>PhoneRTC</name>
-	<description></description>
-	<license></license>
-    <description>This is a WebRTC / PhoneRTC plugin created by Alon Gobkin</description>
+	<description>This is a WebRTC / PhoneRTC plugin created by Alon Gobkin</description>
+	<license>Apache 2.0 License</license>
 	<engines>
 		<engine name="cordova" version=">=3.0.0" />
 	</engines>
