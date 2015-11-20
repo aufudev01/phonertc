@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.dooble.phonertc"
-    version="2.0.3">
+    version="2.0.4">
 
 	<name>PhoneRTC</name>
 	<description>This is a WebRTC / PhoneRTC plugin created by Alon Gobkin</description>
