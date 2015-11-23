@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.dooble.phonertc"
-    version="2.0.4">
+    version="2.0.5">
 
 	<name>PhoneRTC</name>
 	<description>This is a WebRTC / PhoneRTC plugin created by Alon Gobkin</description>
@@ -68,7 +68,7 @@ In order to install PhoneRTC on iOS, please follow these steps:
 		<header-file src="src/ios/RTCVideoSource.h" />
 		<header-file src="src/ios/RTCVideoTrack.h" />
 
-		<header-file src="src/ios/Bridging-Header.h" />
+		<header-file src="src/ios/AlwaysAvailable-Bridging-Header.h" />
 			
 		<source-file src="src/ios/PhoneRTCPlugin.swift" />
 		<source-file src="src/ios/PCObserver.swift" />
